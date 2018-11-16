@@ -1,0 +1,199 @@
+
+WIN 10@SULISTYA-E5 MINGW64 /f/Kelas js/workshop
+$ echo "# basic-html" >> README.md
+
+WIN 10@SULISTYA-E5 MINGW64 /f/Kelas js/workshop
+$ git init
+Initialized empty Git repository in F:/Kelas js/workshop/.git/
+
+WIN 10@SULISTYA-E5 MINGW64 /f/Kelas js/workshop (master)
+$ git add .
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory
+
+WIN 10@SULISTYA-E5 MINGW64 /f/Kelas js/workshop (master)
+$ dir
+contact.html  css  index.html  js  README.md
+
+WIN 10@SULISTYA-E5 MINGW64 /f/Kelas js/workshop (master)
+$ git commit -m "first commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'WIN 10@SULISTYA-E5.(none)')
+
+WIN 10@SULISTYA-E5 MINGW64 /f/Kelas js/workshop (master)
+$ git remote add origin https://github.com/rifqisulistya/basic-html.git
+
+WIN 10@SULISTYA-E5 MINGW64 /f/Kelas js/workshop (master)
+$ git push -u origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/rifqisulistya/basic-html.git'
+
+WIN 10@SULISTYA-E5 MINGW64 /f/Kelas js/workshop (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+WIN 10@SULISTYA-E5 MINGW64 /f/Kelas js/workshop (master)
+$ git push --set-upstream origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/rifqisulistya/basic-html.git'
+
+WIN 10@SULISTYA-E5 MINGW64 /f/Kelas js/workshop (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   README.md
+        new file:   contact.html
+        new file:   css/tabel.css
+        new file:   index.html
+        new file:   js/ganti.js
+
+
+WIN 10@SULISTYA-E5 MINGW64 /f/Kelas js/workshop (master)
+$ git add .
+
+WIN 10@SULISTYA-E5 MINGW64 /f/Kelas js/workshop (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   README.md
+        new file:   contact.html
+        new file:   css/tabel.css
+        new file:   index.html
+        new file:   js/ganti.js
+
+
+WIN 10@SULISTYA-E5 MINGW64 /f/Kelas js/workshop (master)
+$ git commit -am
+error: switch `m' requires a value
+
+WIN 10@SULISTYA-E5 MINGW64 /f/Kelas js/workshop (master)
+$ git commit -am "first commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'WIN 10@SULISTYA-E5.(none)')
+
+WIN 10@SULISTYA-E5 MINGW64 /f/Kelas js/workshop (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   README.md
+        new file:   contact.html
+        new file:   css/tabel.css
+        new file:   index.html
+        new file:   js/ganti.js
+
+
+WIN 10@SULISTYA-E5 MINGW64 /f/Kelas js/workshop (master)
+$ git add README.md contact.html css/tabel.css index.html js/ganti.js
+
+WIN 10@SULISTYA-E5 MINGW64 /f/Kelas js/workshop (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   README.md
+        new file:   contact.html
+        new file:   css/tabel.css
+        new file:   index.html
+        new file:   js/ganti.js
+
+
+WIN 10@SULISTYA-E5 MINGW64 /f/Kelas js/workshop (master)
+$ git commit -am "test"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'WIN 10@SULISTYA-E5.(none)')
+
+WIN 10@SULISTYA-E5 MINGW64 /f/Kelas js/workshop (master)
+$ git config --global user.email "rifqi.sulistya@gmail.com"
+
+WIN 10@SULISTYA-E5 MINGW64 /f/Kelas js/workshop (master)
+$ git config --global user.name "Rifqi Sulistya"
+
+WIN 10@SULISTYA-E5 MINGW64 /f/Kelas js/workshop (master)
+$ git commit -am "first commit"
+[master (root-commit) 23facb8] first commit
+ 5 files changed, 71 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 contact.html
+ create mode 100644 css/tabel.css
+ create mode 100644 index.html
+ create mode 100644 js/ganti.js
+
+WIN 10@SULISTYA-E5 MINGW64 /f/Kelas js/workshop (master)
+$ git push -u origin master
+fatal: unable to access 'https://github.com/rifqisulistya/basic-html.git/': Could not resolve host: github.com
+
+WIN 10@SULISTYA-E5 MINGW64 /f/Kelas js/workshop (master)
+$ git push -u origin master
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (9/9), 1.07 KiB | 274.00 KiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/rifqisulistya/basic-html/pull/new/master
+remote:
+To https://github.com/rifqisulistya/basic-html.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+WIN 10@SULISTYA-E5 MINGW64 /f/Kelas js/workshop (master)
+$ log
+bash: log: command not found
+
+WIN 10@SULISTYA-E5 MINGW64 /f/Kelas js/workshop (master)
+$
