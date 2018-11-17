@@ -1,13 +1,25 @@
 .carousel .carousel-item {
-	height: 610px;
+	height: 625px;
 }
 
 .carousel-item img {
     position: absolute;
     top: 0;
     left: 0;
-    min-height: 610px;
+    min-height: 625px;
 }
+
+.card-img-right .flex-auto .d-none .d-lg-block {
+	height: 100px;
+}
+
+.card-img-right .flex-auto .d-none .d-lg-block img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100px;
+}	
+
 
 .carousel-inner>.carousel-item>img, .carousel-inner>.carousel-item>a>img {
 	display: block;
